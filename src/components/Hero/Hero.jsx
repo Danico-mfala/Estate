@@ -1,6 +1,7 @@
 import React from "react";
 import "./hero.css";
 import { HiLocationMarker } from "react-icons/hi";
+import CountUp from "react-countup";
 
 const Hero = () => {
   return (
@@ -17,18 +18,46 @@ const Hero = () => {
               </h1>
             </div>
             <div className="flexColStart hero-des">
-              <span>
+              <span className="secondaryText">
                 Find a variety of Properties that suit you very easilty
               </span>
-              <span>
+              <span className="secondaryText">
                 Forget all difficulties in finding a residence for you
               </span>
             </div>
-            <div className="search-bar">
+            <div className="flexCenter search-bar">
               <HiLocationMarker color="var(--blue)" size={23} />
+              <input type="text" />
+              <button className="button">Search</button>
+            </div>
+            <div className="flexCenter stats">
+              <div className="flexColCenter stat">
+                <span>
+                  <CountUp start={2050} end={9000} duration={4} />
+                  <span>+</span>
+                </span>
+                <span className="secondaryText">Premiun Products</span>
+              </div>
+
+              <div className="flexColCenter stat">
+                <span>
+                  <CountUp start={1050} end={3000} duration={4} />
+                  <span>+</span>
+                </span>
+                <span className="secondaryText">Happy Customer</span>
+              </div>
+
+              <div className="flexColCenter stat">
+                <span>
+                  <CountUp end={30} duration={4} />
+                  <span>+</span>
+                </span>
+                <span className="secondaryText">Award Winning</span>
+              </div>
             </div>
           </div>
         </div>
+        {/* right side */}
         <div className="flexCenter hero-right">
           <div className="image-container">
             <img src="./hero-image.png" alt="" />
