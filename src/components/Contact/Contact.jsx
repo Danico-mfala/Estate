@@ -33,47 +33,18 @@ const Contact = () => {
                 <div className="flexCenter button">Call Now</div>
               </div>
             </div>
-            {/* Second mode */}
+            {/* second row */}
             <div className="flexColCenter mode">
               <div className="flexStart">
                 <div className="flexCenter icon">
-                  <BsFillChatDotsFill size={25} />
+                  <MdCall size={25} />
                 </div>
                 <div className="flexColStart detail">
-                  <span className="primaryText">Chat</span>
+                  <span className="primaryText">Call</span>
                   <span className="secondaryText">021 123 145 14</span>
                 </div>
               </div>
-              <div className="flexCenter button">Chat Now</div>
-            </div>
-
-            {/* seconde row */}
-            <div className="flexColStart row">
-              <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
-                  </div>
-                  <div className="flexColStart detail">
-                    <span className="primaryText">video Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
-                  </div>
-                </div>
-                <div className="flexCenter button">video Call Now</div>
-              </div>
-            </div>
-            {/* fourth mode */}
-            <div className="flexColCenter mode">
-              <div className="flexStart">
-                <div className="flexCenter icon">
-                  <HiChatBubbleBottomCenter size={25} />
-                </div>
-                <div className="flexColStart detail">
-                  <span className="primaryText">Message</span>
-                  <span className="secondaryText">021 123 145 14</span>
-                </div>
-              </div>
-              <div className="flexCenter button">Message Now</div>
+              <div className="flexCenter button">Call Now</div>
             </div>
           </div>
         </div>
