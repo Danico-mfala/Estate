@@ -4,7 +4,7 @@
     padding-bottom: 2rem;
 }
 .hero-container{
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
 }
 /* Left side */
@@ -66,4 +66,30 @@
 .image-container > img {
     width: 100%;
     height: 100%;
+}
+@media (max-width:640px){
+    .hero-container{
+        margin-top: 2rem;
+    }
+    .hero-title > h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .image-container{
+        width: 95%;
+        height: 25rem;
+    }
+    .stats{
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .h-right{
+        width: 100%;
+    }
+    .stats > :nth-child(1){
+        font-size: 1.5rem;
+    }
+    .stats > :nth-child(2){
+        font-size: 0.8rem;
+    }
 }
