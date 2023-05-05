@@ -68,16 +68,17 @@ const Hero = () => {
         {/* right side */}
         <div className="flexCenter hero-right">
           <motion.div
-            initial={{ x: "7rem", opacity: 0 }}
+            initial={{ x: "7rem" }}
             animate={{ x: 0, opacity: 1 }}
             transition={{
               duration: 2,
               type: "spring",
             }}
-          ></motion.div>
-          <div className="image-container">
-            <img src="./hero-image.png" alt="" />
-          </div>
+          >
+            <div className="image-container">
+              <img src="./hero-image.png" alt="" />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
